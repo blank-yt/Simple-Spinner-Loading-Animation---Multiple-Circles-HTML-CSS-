@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+.circle {
+  border: 10px solid #932e3e;
+  margin: 10px;
+  display: block;
+  border-radius: 100%;
+  border-top-color: whitesmoke;
+  border-right-color: whitesmoke;
+  animation: spin 4s infinite cubic-bezier(0.56, -0.24, 0.41, 1.23);
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
